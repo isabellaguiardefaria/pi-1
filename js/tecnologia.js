@@ -1,6 +1,6 @@
 let containerNoticias = document.querySelector ("#listaDeNoticias");
 async function getNoticias() {
-    let resposta = await fetch ("http://newsapi.org/v2/top-headlines?apiKey=f3cc6c8c530a4a9c814ab1807c454a18&country=br");
+    let resposta = await fetch ("http://newsapi.org/v2/top-headlines?apiKey=f3cc6c8c530a4a9c814ab1807c454a18&country=br&category=technology");
 
     let noticias = await resposta.json();
     
@@ -10,7 +10,7 @@ async function getNoticias() {
 
         let cardNoticia = `
         <div class="col-3">
-                <div class="card" w-50>
+                <div class="card">
                     <img src="${noticia.urlToImage}" 
                     class="card-img-top" alt="...">
                     <div class="card-body">
