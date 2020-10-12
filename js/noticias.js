@@ -31,6 +31,7 @@ async function getNoticias() {
                 <div class="card" style="height:700px">
                     <img src="${noticia.urlToImage}" 
                     class="card-img-top" alt="...">
+                    
                     <div class="card-body">
                       <h5 class="card-title">${noticia.title}</h5>
                       <p class="card-text" ">${noticia.description}</p>
@@ -38,6 +39,7 @@ async function getNoticias() {
                     <div class="card-footer">
                       <a href="${noticia.url}" class="btn btn-primary">Ver notícia completa</a>
                     </div>
+                    
                 </div>
             </div> 
         `;
