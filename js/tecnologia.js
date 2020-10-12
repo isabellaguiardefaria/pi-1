@@ -9,7 +9,7 @@ async function getNoticias() {
         let noticia = noticias.articles[i];
 
         let cardNoticia = `
-        <div class="col-3">
+        <div class="col-md-3 mb-3">
                 <div class="card">
                     <img src="${noticia.urlToImage}" 
                     class="card-img-top" alt="...">
