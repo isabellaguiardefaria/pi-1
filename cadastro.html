@@ -1,75 +1,104 @@
 <!DOCTYPE html>
 <html>
+ 
 <head>
- <meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-     <title>Notícias da Cidad - Cadastro</title>
-
+ 
+    <title>Cadastre-se - Noticias da Cidade</title>
+ 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+ 
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="estilo.css">
 </head>
-
+ 
 <body class="bg-light">
-
-	
-	<div class="container clearfix">
-		<div>
-			<div class="text-center mh-100 float-left mr-5 bg-info p-3">
-				<img class="mb-2" src="img/logo.png">
-				<h3 class="text-white">Faça parte do nosso portal de notícias</h3>
-			</div>
-			
-			<div class="container clearfix bg-white p-4">
-				
-				<form class="float-left">
-
-						<div class="form-group">
-                           <label for="nome">Nome completo</label>
-                           <input id="nome" type="text" required="required" class="form-control" name="nome" pattern="[a-z\s]+$" value="" placeholder="Não coloque números">
+ 
+    <div class="container clearfix">
+ 
+        <div class="text-center mh-100 float-center mr-7 bg-info p-4">
+            <a href="index.html"><img src="img/logo.png" alt="Logo"></a>
+            <h3 class="text-white text-center">Faça parte do nosso portal de notícias</h3>
+        </div>
+ 
+        <div class="container clearfix bg-white p-4">
+ 
+            <form class="float-center">
+ 
+                <div class="form-group text-left">
+                    <label for="nome ">Insira seu nome</label>
+ 
+                    <div class="row text-left">
+                        <div class="col">
+                            <input id="nome" type="text" required="required" class="form-control" name="nome" pattern="[a-z\s]+$" value="" placeholder="Nome">
                         </div>
-
-                        <div class="form-group">
-                           <label for="email">E-mail</label>
-                           <input id="email" type="email" required="required" class="form-control" name="email" value="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" placeholder="exemplo@email.com">
+                        <div class="col">
+                            <input id="nome" type="text" required="required" class="form-control" name="nome" pattern="[a-z\s]+$" value="" placeholder="Sobrenome">
                         </div>
+                    </div>
+                </div>
 
-                        <div class="form-group">
-                           <label for="senha">Senha</label>
-                           <input id="senha" type="password" required="required" class="form-control" name="senha">
-                        </div>
 
-                        <div class="form-group">
-                           <div class="custom-checkbox custom-control">
-                              <input type="checkbox" name="aceitor" id="aceito" class="custom-control-input">
-                              <label for="aceito" class="custom-control-label">Desejo receber e-mails</label>
-                           </div>
-                        </div>
-                        <div class="form-group">
-                           <div class="custom-checkbox custom-control">
-                              <input type="checkbox" name="concordo" id="concordo" class="custom-control-input" required="required">
-                              <label for="concordo" class="custom-control-label">Aceito os <a href="#">Termos de Uso</a> a e <a href="#">Política de Privacidade</a>.</label>
-                           </div>
-                        </div>
 
-                        <div class="form-group m-0">
-                           <button type="submit" class="btn btn-info btn-block">
+                <div class="row form-group text-left">
+                    <div class="col">
+                        <label for="Cidade">Cidade</label>
+                        <input type="text" class="form-control " id="validationDefault03 " placeholder="Cidade " required="required ">
+                    </div>
+                    <div class="col">
+                        <label for="Estado">Estado</label>
+                        <input type="text" class="form-control " id="validationDefault04 " placeholder="Estado " required="required ">
+                    </div>
+                    <div class="col">
+                        <label for="CEP">CEP</label>
+ 
+                        <input type="number" class="form-control " id="validationDefault05 " placeholder="Cep " required="required onkeypress" pattern="^\d{4}-\d{3}-\d{4}$" type="tel">
+ 
+                    </div>
+                </div>
+ 
+                <div class=" form-group ">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" required="required" class="form-control col-sm-3" name="email" placeholder="exemplo@email.com" value=" " pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                </div>
+ 
+                <div class="form-group ">
+                    <label for="senha ">Senha</label>
+                    <input id="senha" type="password" required="required" class="form-control col-sm-3" name="senha" placeholder="******" minlength="6" maxlength="6">
+                </div>
+ 
+                <div class=" form-group">
+                    <div class="custom-checkbox custom-control">
+                        <input type="checkbox" name="aceitor" id="aceito" class="custom-control-input">
+                        <label for="aceito" class="custom-control-label">Desejo receber e-mails</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="custom-checkbox custom-control ">
+                        <input type="checkbox" name="concordo" id="concordo" class="custom-control-input" required="required">
+                        <label for="concordo" class="custom-control-label ">Aceito os <a href="#">Termos de Uso</a> e a <a href="#">Política de Privacidade</a>.</label>
+                    </div>
+                </div>
+ 
+                <div class="form-group m-0 col-sm-3 ">
+                    <button type="submit" class="btn btn-info btn-block ">
                               Cadastre-se
                            </button>
-                        </div>
-                     </form>
-			</div>
-		</div>
-	</div>
-	<footer>
-    <div class="container">
-      <p class="m-0 text-center">Copyright &copy; 2020 &mdash; Notícias Cidade</p>
+                </div>
+            </form>
+        </div>
+
+
+
+        <div class="container ">
+            <p class="m-0 text-center ">Copyright &copy; 2020 &mdash; Notícias Cidade</p>
+        </div>
+        <!-- /.container -->
+ 
     </div>
-    <!-- /.container -->
-  </footer>
-	
+ 
 </body>
+ 
 </html>
