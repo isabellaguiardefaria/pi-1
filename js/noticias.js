@@ -32,7 +32,7 @@ async function getNoticias() {
         <div class="col-md-3 mb-3">   
                 <div class="card" style="height:700px">
                     <img src="${noticia.urlToImage}" 
-                    class="card-img-top" alt="Imagem com erro">
+                    class="card-img-top" alt="Não foi possível carregar a imagem.">
                     
                     <div class="card-body">
                       <h5 class="card-title">${noticia.title}</h5>
