@@ -38,7 +38,7 @@ async function getNoticias() {
                       <h5 class="card-title">${noticia.title}</h5>
                       <p class="card-text" ">${noticia.description}</p>
                     </div>
-                    <div class="card-footer">
+                    <div class="card-footer d-flex justify-content-center">
                       <a href="${noticia.url}" class="btn btn-primary">Ver notícia completa</a>
                     </div>
                     
